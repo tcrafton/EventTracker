@@ -10,7 +10,7 @@ for every to enter and see upcoming events.
 ## Goals
 
 *  Screen to list events (can filter to just see the ones you're signed up for)
-*  Screen to create an events
+*  Screen to create an event
 *  Screen to edit events (Master/Detail view)
 *  Calendar that shows the events (can filter to show all or an individual's events)
 *  Setup MongoDB or Firebase on the backend
