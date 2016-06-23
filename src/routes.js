@@ -3,9 +3,9 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
 import HomePage from './components/HomePage';
-import EventsPage from './components/EventsPage';
-import CalendarPage from './components/CalendarPage';
-import OverviewPage from './components/OverviewPage';
+import EventsPage from './components/events/EventsPage';
+import CalendarPage from './components/calendar/CalendarPage';
+import OverviewPage from './components/overview/OverviewPage';
 import Login from './components/Login';
 
 export default (

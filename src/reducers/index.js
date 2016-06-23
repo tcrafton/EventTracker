@@ -1,8 +1,11 @@
 // Set up your root reducer here...
 import { combineReducers } from 'redux';
+import events from './eventReducer';
+import ajaxCallsInProgress from './ajaxStatusReducer';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  events,
+  ajaxCallsInProgress
 });
 
 export default rootReducer;
