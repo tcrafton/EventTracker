@@ -1,7 +1,7 @@
 {
-  "name": "react-slingshot",
-  "version": "4.0.0",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "eventtracker",
+  "version": "0.1.0",
+  "description": "Track events with a group (ex. for a family or team).",
   "scripts": {
     "setup": "node tools/setup/setupMessage.js && npm install && node tools/setup/setup.js",
     "remove-demo": "babel-node tools/removeDemo.js",
@@ -22,7 +22,7 @@
     "test:cover:travis": "babel-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require ./tools/testSetup.js \"src/**/*.spec.js\" && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Cory House",
+  "author": "Tommy Crafton",
   "license": "MIT",
   "dependencies": {
     "object-assign": "4.1.0",
@@ -75,23 +75,9 @@
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "react-router",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "redux",
-    "flux",
-    "boilerplate",
-    "starter"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
+    "url": ""
   }
 }
