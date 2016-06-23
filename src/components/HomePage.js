@@ -3,7 +3,7 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div>
-      <h1>Event Tracker</h1>
+      <h1>Event Tracker!</h1>
     </div>
   );
 };
