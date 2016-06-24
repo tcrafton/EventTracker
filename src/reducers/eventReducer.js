@@ -5,7 +5,6 @@ export default function eventReducer(state = initialState.events, action) {
   switch (action.type) {
     case types.LOAD_EVENTS_SUCCESS:
       return action.events;
-      break;
     default:
       return state;
   }

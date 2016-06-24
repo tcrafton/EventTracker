@@ -16,3 +16,10 @@ export function loadEvents(){
       });
     };
 }
+
+export function selectEvent(event) {
+  return {
+    type: types.EVENT_SELECTED,
+    payload: event
+  };
+}

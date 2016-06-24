@@ -2,7 +2,7 @@ const events = [
   {
     id: 0,
     eventName: 'Cards Game',
-    date: '9/1/16',
+    eventDate: '9/1/16',
     address: {
       number: '700',
       street: 'Clark Ave.',
@@ -16,7 +16,7 @@ const events = [
   {
     id: 2,
     eventName: 'Convention',
-    date: '8/1/16',
+    eventDate: '8/1/16',
     address: {
       number: '3',
       street: 'Branson Landing Blvd.',
@@ -30,7 +30,7 @@ const events = [
   {
     id: 3,
     eventName: 'Girls State',
-    date: '6/26/16',
+    eventDate: '6/26/16',
     address: {
       number: '108',
       street: 'W South St.',
@@ -44,7 +44,7 @@ const events = [
   {
     id: 4,
     eventName: 'Paintball',
-    date: '8/25/16',
+    eventDate: '8/25/16',
     address: {
       number: '3925',
       street: 'State Highway H',
@@ -60,7 +60,7 @@ const events = [
 class EventApi {
 
   static getAllEvents() {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve(Object.assign([], events));
       }, 1000);
