@@ -26,6 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "0.12.0",
+    "google-maps-react": "1.0.16",
     "object-assign": "4.1.0",
     "react": "15.0.2",
     "react-dom": "15.0.2",

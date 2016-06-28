@@ -3,6 +3,8 @@ const events = [
     id: 0,
     eventName: 'Cards Game',
     eventDate: '9/1/16',
+    lat: -34.397,
+    lon: 150.644,
     address: {
       number: '700',
       street: 'Clark Ave.',
@@ -17,6 +19,8 @@ const events = [
     id: 2,
     eventName: 'Convention',
     eventDate: '8/1/16',
+    lat: 34.966671,
+    lon: 138.933334,
     address: {
       number: '3',
       street: 'Branson Landing Blvd.',
@@ -31,6 +35,8 @@ const events = [
     id: 3,
     eventName: 'Girls State',
     eventDate: '6/26/16',
+    lat: 35.7796,
+    lon: 78.63882,
     address: {
       number: '108',
       street: 'W South St.',
@@ -45,6 +51,8 @@ const events = [
     id: 4,
     eventName: 'Paintball',
     eventDate: '8/25/16',
+    lat: 39.7392,
+    lon: 104.9903,
     address: {
       number: '3925',
       street: 'State Highway H',

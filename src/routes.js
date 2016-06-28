@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import EventsPage from './components/events/EventsPage';
 import CalendarPage from './components/calendar/CalendarPage';
 import OverviewPage from './components/OverviewPage';
+import MapTest from './components/MapTest';
 import Login from './components/Login';
 
 export default (
@@ -14,6 +15,7 @@ export default (
     <Route path="events-list" component={EventsPage} />
     <Route path="calendar" component={CalendarPage} />
     <Route path="overview" component={OverviewPage} />
+    <Route path="map-test" component={MapTest} />
     <Route path="login" component={Login} />
   </Route>
 );

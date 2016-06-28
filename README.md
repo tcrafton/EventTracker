@@ -5,6 +5,7 @@ for every to enter and see upcoming events.
 
 *  Uses React and Redux
 *  Uses [React Slingshot](https://github.com/coryhouse/react-slingshot)
+*  Uses Google Maps
 
 
 ## Goals
@@ -16,3 +17,8 @@ for every to enter and see upcoming events.
 *  Setup MongoDB or Firebase on the backend
 *  Setup authorization
 *  Setup event reminders
+
+
+## References
+
+* [Interacting Google Maps in React Using refs](https://www.codementor.io/reactjs/tutorial/integrate-google-maps-api-react-refs)

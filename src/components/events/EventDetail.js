@@ -1,9 +1,31 @@
 import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
-import GoogleMap from '../GoogleMap';
 
 class EventDetail extends Component {
+  constructor() {
+    super();
+
+  }
+
+  componentDidUpdate() {
+    const SELECTED_LAT_LON = {
+      lat: this.props.event.lat,
+      lng: this.props.event.lon
+    };
+
+    this.map = new google.maps.Map(this.refs.map, {
+      center: SELECTED_LAT_LON,
+      zoom: 12
+    });
+
+  }
+
   render() {
+    const mapStyle = {
+      width: 500,
+      height: 300,
+      border: '1px solid black'
+    };
 
     const { fields: { eventName, eventDate, description }} = this.props;
     if (!this.props.event) {
@@ -17,7 +39,6 @@ class EventDetail extends Component {
           <div className="row">
             <div className="col-md-6">
               <legend>Event Info</legend>
-
 
               <div className="form-group">
                 <label htmlFor="inputEventName" className="col-md-3 control-label">Event Name</label>
@@ -41,20 +62,14 @@ class EventDetail extends Component {
               </div>
 
             </div>
-          </div>
 
+            <div className="col-md-3">
+              <div ref="map" style={mapStyle}>I should be a map!</div>
+            </div>
+
+          </div>
         </div>
       </form>
-
-      <table className="table table-hover">
-        <tbody>
-          <tr>
-            <td>Map:</td>
-            <td><GoogleMap lon={138.933334} lat={34.966671} /></td>
-          </tr>
-        </tbody>
-      </table>
-
       </div>
     );
   }
