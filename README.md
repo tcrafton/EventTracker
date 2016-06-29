@@ -1,7 +1,7 @@
 # Event Tracker
 
-Event Tracker is an application for tracking events with a group.  For example, a family can use it to have a central placed
-for every to enter and see upcoming events.
+Event Tracker is an application for tracking events with a group.  For example, a family can use it to have a central place
+for everyone to enter and see upcoming events.
 
 ## Technologies Used
 *  React and Redux
