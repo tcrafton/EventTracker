@@ -3,9 +3,10 @@
 Event Tracker is an application for tracking events with a group.  For example, a family can use it to have a central placed
 for every to enter and see upcoming events.
 
-*  Uses React and Redux
-*  Uses [React Slingshot](https://github.com/coryhouse/react-slingshot)
-*  Uses Google Maps
+## Technologies Used
+*  React and Redux
+*  [React Slingshot](https://github.com/coryhouse/react-slingshot)
+*  Google Maps
 
 
 ## Goals
