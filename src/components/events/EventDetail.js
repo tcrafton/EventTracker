@@ -1,3 +1,6 @@
+/*global google:true*/
+/*eslint no-undef: "error"*/
+
 import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
 

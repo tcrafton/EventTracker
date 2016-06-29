@@ -1,3 +1,6 @@
+/*global google:true*/
+/*eslint no-undef: "error"*/
+
 import React from 'react';
 
 const ARC_DE_TRIOMPHE_POSITION = {

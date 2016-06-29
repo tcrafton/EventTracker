@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { selectEvent, loadEvents } from '../../actions/eventActions';
+import { selectEvent, loadEvents, testGetData } from '../../actions/eventActions';
 import { bindActionCreators } from 'redux';
 
 class EventList extends Component {
@@ -15,6 +15,8 @@ class EventList extends Component {
 
   componentWillMount() {
     this.props.loadEvents();
+    this.props.testGetData();
+
   }
 
   renderList() {
@@ -69,7 +71,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectEvent, loadEvents }, dispatch);
+  return bindActionCreators({ selectEvent, loadEvents, testGetData }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventList);

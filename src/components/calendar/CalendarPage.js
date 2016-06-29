@@ -23,7 +23,7 @@ class Basic extends Component {
         <BigCalendar
           {...this.props}
           events={events}
-          defaultDate={new Date(2015, 3, 1)}
+          defaultDate={new Date(2016, 6, 1)}
           />
       </div>
     );
