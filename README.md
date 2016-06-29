@@ -7,6 +7,7 @@ for everyone to enter and see upcoming events.
 *  React and Redux
 *  [React Slingshot](https://github.com/coryhouse/react-slingshot)
 *  Google Maps
+*  [Big Calendar](http://intljusticemission.github.io/react-big-calendar/examples/index.html#intro)
 
 
 ## Goals

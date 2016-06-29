@@ -4,7 +4,6 @@ import { reduxForm } from 'redux-form';
 class EventDetail extends Component {
   constructor() {
     super();
-
   }
 
   componentDidUpdate() {
