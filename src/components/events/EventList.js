@@ -6,17 +6,10 @@ import { bindActionCreators } from 'redux';
 class EventList extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      eventName: this.props.events.eventName
-    };
-
   }
 
   componentWillMount() {
     this.props.loadEvents();
-    this.props.testGetData();
-
   }
 
   renderList() {

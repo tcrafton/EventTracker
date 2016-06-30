@@ -3,6 +3,8 @@
 
 import React, { Component, PropTypes } from 'react';
 import { reduxForm } from 'redux-form';
+import { bindActionCreators } from 'redux';
+import { addEvent } from '../../actions/eventActions';
 
 class EventDetail extends Component {
   constructor() {
@@ -29,7 +31,10 @@ class EventDetail extends Component {
       border: '1px solid black'
     };
 
-    const { fields: { eventName, eventDate, description }} = this.props;
+    const { fields: { eventName, eventDate, description },
+      submitting
+      } = this.props;
+
     if (!this.props.event) {
       return <div>Select an Event</div>;
     }
@@ -69,6 +74,10 @@ class EventDetail extends Component {
               <div ref="map" style={mapStyle}>I should be a map!</div>
             </div>
 
+            <button type="button" disabled={submitting} onClick={addEvent}>
+              Test Button
+            </button>
+
           </div>
         </div>
       </form>
@@ -79,7 +88,9 @@ class EventDetail extends Component {
 
 EventDetail.propTypes = {
   fields: PropTypes.object.isRequired,
-  event: PropTypes.object.isRequired
+  event: PropTypes.object.isRequired,
+  addEvent: PropTypes.func.isRequired,
+  submitting: PropTypes.bool.isRequired
 };
 
 function mapStateToProps(state) {
@@ -89,7 +100,11 @@ function mapStateToProps(state) {
   };
 }
 
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ addEvent }, dispatch);
+}
+
 export default reduxForm({
   form: 'EventDetailForm',
   fields: ['eventName', 'eventDate', 'description' ]
-}, mapStateToProps)(EventDetail);
+}, mapStateToProps, mapDispatchToProps)(EventDetail);

@@ -26,9 +26,12 @@
   "license": "MIT",
   "dependencies": {
     "axios": "0.12.0",
+    "body-parser": "1.15.2",
     "kerberos": "0.0.21",
     "moment": "2.13.0",
     "mongodb": "2.1.18",
+    "mongoose": "4.5.2",
+    "mongoose-schema": "0.0.7",
     "object-assign": "4.1.0",
     "react": "15.0.2",
     "react-big-calendar": "0.10.2",

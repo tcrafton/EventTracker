@@ -10,7 +10,7 @@ export function loadEventsSuccess(events){
 }
 
 export function loadEvents(){
-    return function(dispatch){
+    return function(dispatch) {
       dispatch(beginAjaxCall());
       return eventApi.getAllEvents().then(events => {
         dispatch(loadEventsSuccess(events));
@@ -25,6 +25,14 @@ export function selectEvent(event) {
     type: types.EVENT_SELECTED,
     payload: event
   };
+}
+
+export function addEvent() {
+    return eventApi.addNewEvent().then(event => {
+      console.log('event added');
+    }).catch(error => {
+      throw(error);
+    });
 }
 
 export function testGetData(){
